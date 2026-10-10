@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Přírodovědné bádání – Žákovské projekty</title>
+  <!-- Propojení na CSS soubor -->
+  <link rel="stylesheet" href="prirodovednebadanicss.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Přírodovědné bádání</h1>
+      <p class="subtitle">Databáze výzkumných a laboratorních projektů žáků</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Ovládací prvky: Vyhledávání a Filtry -->
+    <section class="controls">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Vyhledat podle názvu, autora nebo klíčového slova...">
+      </div>
+      <div class="filter-buttons" id="filterButtons">
+        <button class="filter-btn active" data-category="all">Všechny</button>
+        <button class="filter-btn" data-category="Biologie">Biologie</button>
+        <button class="filter-btn" data-category="Chemie">Chemie</button>
+        <button class="filter-btn" data-category="Fyzika">Fyzika</button>
+        <button class="filter-btn" data-category="Ekologie">Ekologie</button>
+      </div>
+    </section>
+
+    <!-- Mřížka s kartami projektů -->
+    <section class="projects-grid" id="projectsGrid">
+      <!-- Karty se dynamicky vykreslují pomocí JavaScriptu -->
+    </section>
+  </main>
+
+  <!-- Modal okno pro detail projektu -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <span class="badge" id="modalCategory">Kategorie</span>
+      <h2 id="modalTitle">Název projektu</h2>
+      <div class="modal-meta" id="modalAuthor">Autor</div>
+      <p class="modal-description" id="modalDescription"></p>
+      
+      <div class="modal-section">
+        <h3>Metodika a postup</h3>
+        <p id="modalMethodology"></p>
+      </div>
+      
+      <div class="modal-section">
+        <h3>Výsledky a závěr</h3>
+        <p id="modalResults"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Propojení na JavaScript soubor (na konci body) -->
+  <script src="prirodovednebadanijs.js"></script>
+</body>
+</html>
