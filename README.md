@@ -1,1 +1,1 @@
-Prirodovednebadani2026-27 - webová aplikace pro prezentaci výzkumných a laboratorních projektů žáků školy.- funkce - Vyhledávání podle názvu, autora nebo klíčových slov - filtrování podle kategorií (biologie, chemie, fyzika, ekologie) - used: HTML5, CSS3, Vanilla JavaScript
+Prirodovednebadani2026-27 - webová aplikace pro prezentaci výzkumných a laboratorních projektů žáků školy.- funkce - vyhledávání podle názvu, autora nebo klíčových slov - filtrování podle kategorií (biologie, chemie, fyzika, ekologie) - used: HTML5, CSS3, Vanilla JavaScript
